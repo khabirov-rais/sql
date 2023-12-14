@@ -17,6 +17,7 @@ CREATE TABLE IF NOT exists album(
 create table if not exists track(
 	track_id SERIAL PRIMARY key,
 	name_track VARCHAR(60) not null,
+	duration time not null,
 	album_id INTEGER NOT NULL references album(album_id) 
 );
 
